@@ -1,5 +1,5 @@
 import pandas as pd
-import seaborn as sns
+# import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
 import sklearn
@@ -37,10 +37,10 @@ st.markdown("<h2 style = 'top-margin: 0rem;text-align: center; color: #4F709C; t
 st.markdown("<br>", unsafe_allow_html= True)
 st.markdown("<p style = 'text-align: justify; color : #F0F0F0'>This project utilizes linear regression analysis to predict the potential profit of startup companies. By analyzing various factors such as investment, marketing expenditure, and industry trends, this model aims to provide valuable insights for entrepreneurs and investors, aiding in informed decision-making for new business ventures.</p>", unsafe_allow_html=True)
 
-heat_map = plt.figure(figsize = (14, 7))
-corr_data = data[['R&D Spend', 'Administration', 'Marketing Spend', 'Profit']]
-sns.heatmap(corr_data.corr(), annot = True, cmap='BuPu')
-st.write(heat_map)
+# heat_map = plt.figure(figsize = (14, 7))
+# corr_data = data[['R&D Spend', 'Administration', 'Marketing Spend', 'Profit']]
+# sns.heatmap(corr_data.corr(), annot = True, cmap='BuPu')
+# st.write(heat_map)
 
 st.write(data.sample(10).drop('Unnamed: 0', axis = 1).reset_index(drop = True))
 
