@@ -69,7 +69,7 @@ with st.sidebar:
         
 
 st.subheader("Your Inputted Data")
-input_var = pd.DataFrame([{'R&D Spend': research, 'Administration' : admin, 'Marketing Spend' : market, 'State' : state}])
+input_var = pd.DataFrame([{'R&D Spend': research, 'Administration' : admin, 'Marketing Spend' : market}])
 st.write(input_var)
 
 st.markdown("<br>", unsafe_allow_html= True)
