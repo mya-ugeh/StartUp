@@ -58,14 +58,14 @@ with st.sidebar:
         research = st.slider('R&D Spend', data['R&D Spend'].min(), data['R&D Spend'].max())
         admin = st.slider('Administration',data['Administration'].min(), data['Administration'].max())
         market = st.slider('Marketing Spend',data['Marketing Spend'].min(), data['Marketing Spend'].max())
-        profit = st.slider('Profit',data['Profit'].min(), data['Profit'].max())
-        # state = st.selectbox('choose state', [''] + list(data['State'].unique()))
+        # profit = st.slider('Profit',data['Profit'].min(), data['Profit'].max())
+        state = st.selectbox('choose state', [''] + list(data['State'].unique()))
     else:
         research = st.number_input('R&D Spend', data['R&D Spend'].min(), data['R&D Spend'].max())
         admin = st.number_input('Administration',data['Administration'].min(), data['Administration'].max())
         market = st.number_input('Marketing Spend',data['Marketing Spend'].min(), data['Marketing Spend'].max())
-        profit = st.number_input('Profit',data['Profit'].min(), data['Profit'].max())
-        # state = st.selectbox('choose state', [''] + list(data['State'].unique())) 
+        # profit = st.number_input('Profit',data['Profit'].min(), data['Profit'].max())
+        state = st.selectbox('choose state', [''] + list(data['State'].unique())) 
         
 
 st.subheader("Your Inputted Data")
